@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  text-align: center;
+  position: relative;
+}
+
+/* Logo */
+.top-logo {
+  background: white;
+  padding: 5px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.top-logo img {
+  max-width: 220px;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  z-index: 2;
+}
+
+.menu-toggle {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.scroll-text-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 90%;
+  position: relative;
+  height: 19px;
+}
+
+.scroll-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollLeft 10s linear infinite;
+  font-size: 14px;
+  color: #fff;
+}
+
+@keyframes scrollLeft {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+/* Transparent overlay menu */
+.menu {
+  display: none;
+  position: absolute;
+  top: calc(100px + 60px);
+  left: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.85);
+  z-index: 5;
+  backdrop-filter: blur(4px);
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Inserted Image Section */
+.feature-image {
+  margin: 15px auto;
+  max-width: 355px;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Top Title */
+.top-title {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.orange-line {
+  border: none;
+  height: 3px;
+  background-color: orange;
+  width: 70%;
+}
+
+/* App Name & Download Button */
+.app-name {
+  font-size: 1.5em;
+  margin: 15px 0 5px;
+  color: #222;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 8px 30px;
+  background: linear-gradient(135deg, #ff0066, #ff6600);
+  color: white;
+  font-size: 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+footer span {
+  font-size: 18px;
+}
+
+footer a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.telegram-link {
+  color: #0088cc;
+}
+
+.whatsapp-link {
+  color: green;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
